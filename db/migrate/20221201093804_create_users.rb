@@ -11,7 +11,7 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.string :emergency_phone 
       t.string :emergency_relationship
       t.text :medical_info 
-      t.text :notes 
+      t.text :contact_notes 
       t.integer :job_id 
       t.integer :production_id 
       t.boolean :is_admin, default: false
