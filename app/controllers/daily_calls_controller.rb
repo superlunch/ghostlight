@@ -1,0 +1,2 @@
+class DailyCallsController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class ProductionMtgReportsController < ApplicationController
+end
