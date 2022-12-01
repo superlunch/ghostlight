@@ -1,0 +1,2 @@
+class PerformanceReport < ApplicationRecord
+end

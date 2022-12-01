@@ -1,10 +1,10 @@
 :root {
-  --bluegrey: #37474f;
-  --mustard: #FAC505;
-  --teal: #008BB4;
-  --green: #4FA17E;
-  --blk: #191919;
-  --wht: #EDEDED;
+  --1bluegrey: #2d4040;
+  --2bluegrey: #293333;
+  --1mustard: #e8b61c;
+  --2mustard: #cc9e14;
+  --blk: #1e1f1f;
+  --wht: #ebf2f2;
 }
 
 body {
@@ -15,6 +15,16 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, input-mono, "Courier New", monospace;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-family: input-mono, monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: calc(10px + 2vmin);
 }

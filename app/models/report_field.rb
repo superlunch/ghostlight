@@ -1,0 +1,2 @@
+class ReportField < ApplicationRecord
+end

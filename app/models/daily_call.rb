@@ -1,0 +1,2 @@
+class DailyCall < ApplicationRecord
+end

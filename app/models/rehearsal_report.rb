@@ -1,0 +1,2 @@
+class RehearsalReport < ApplicationRecord
+end

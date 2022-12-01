@@ -1,0 +1,2 @@
+class ProductionMtgReport < ApplicationRecord
+end

@@ -4,10 +4,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="ghostlight-fav-tran.png" className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <img src="source-4.png" className="App-logo" alt="logo" />
+        <h1>
+          <p className="title">Ghostlight</p> is under construction.
+        </h1>
       </header>
     </div>
   );
