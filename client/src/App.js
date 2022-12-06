@@ -1,16 +1,21 @@
 import "./App.css";
+import Home from "./Home";
+import NotFound from "./NotFound";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="source-4.png" className="App-logo" alt="logo" />
-        <h1>
-          <p className="title">Ghostlight</p> is under construction.
-        </h1>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
 }
+
+require("react-dom");
+window.React2 = require("react");
+console.log(window.React1 === window.React2);
 
 export default App;

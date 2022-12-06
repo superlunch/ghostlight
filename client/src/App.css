@@ -1,13 +1,13 @@
-.App {
+.app {
   text-align: center;
 }
 
-.App-logo {
+.src4 {
   height: 40vmin;
   pointer-events: none;
 }
 
-.App-header {
+.app-header {
   background-color: var(--1bluegrey);
   min-height: 100vh;
   display: flex;
@@ -23,6 +23,13 @@
   font-weight: 100;
   font-style: normal;
   letter-spacing: 0.01em;
-  font-size: calc(32px + 2vmin);
+  font-size: calc(36px + 2vmin);
   color: var(--1mustard);
+}
+
+/* NotFound */
+
+.app-body {
+  padding: 16px 0 0 0;
+  font-size: calc(8px + 2vmin);
 }
