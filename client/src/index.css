@@ -1,10 +1,19 @@
 :root {
   --1bluegrey: #2d4040;
-  --2bluegrey: #293333;
+  --2bluegrey: #283636;
   --1mustard: #e8b61c;
   --2mustard: #cc9e14;
   --blk: #1e1f1f;
   --wht: #ebf2f2;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    radial-gradient(
+      78.42% 45.08% at 46.44% 54.92%,
+      var(--1bluegrey) 31.25%,
+      var(--2bluegrey) 100%
+    );
+  min-height: 100vh;
+  color: white;
+  overflow-y: hidden;
 }
 
 body {
@@ -12,6 +21,35 @@ body {
   font-family: "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  margin: 5px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-family: input-mono, monospace;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: var(--1mustard);
+  color: white;
+  font-size: 16px;
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  transform: scale(0.98);
+  background-color: var(--2mustard);
 }
 
 code {
