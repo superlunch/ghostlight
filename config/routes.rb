@@ -41,11 +41,11 @@ Rails.application.routes.draw do
   delete "/rehearsal_reports/:id", to: "rehearsal_reports#destroy"
 
   # production_mtg_reports
-  get "/production_mtg_reports", to: "production_mtg_reports#index"
-  get "/production_mtg_reports/:id", to: "production_mtg_reports#show"
-  post "/production_mtg_reports", to: "production_mtg_reports#create"
-  patch "/production_mtg_reports/:id", to: "production_mtg_reports#update"
-  delete "/production_mtg_reports/:id", to: "production_mtg_reports#destroy"
+  # get "/production_mtg_reports", to: "production_mtg_reports#index"
+  # get "/production_mtg_reports/:id", to: "production_mtg_reports#show"
+  # post "/production_mtg_reports", to: "production_mtg_reports#create"
+  # patch "/production_mtg_reports/:id", to: "production_mtg_reports#update"
+  # delete "/production_mtg_reports/:id", to: "production_mtg_reports#destroy"
 
   # performance_reports
   get "/performance_reports", to: "performance_reports#index"

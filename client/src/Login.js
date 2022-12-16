@@ -41,12 +41,13 @@ function Login({handleCurrentUser}) {
 
   return (
     <div>
-      <form onSubmit={handleLogin}>
+      <form className="reg-form" onSubmit={handleLogin}>
         <input
           type="text"
           title="username"
           placeholder="username"
           value={username}
+          className="form-fields"
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
@@ -54,9 +55,10 @@ function Login({handleCurrentUser}) {
           title="username"
           placeholder="password"
           value={password}
+          className="form-fields"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">LOGIN</button>
+        <button type="submit" className="reg-login-button">login</button>
       </form>
     </div>
   );

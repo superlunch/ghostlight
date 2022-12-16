@@ -142,12 +142,11 @@
 .landing-cont {
   position: absolute;
   top: 25%;
-  left: 12%;
-  right: 12%;
-  /* height: 40vmin; */
+  left: 15%;
+  right: 15%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 45px;
+  align-items: center;
   justify-items: start;
   margin: 0 1%;
 }
@@ -159,6 +158,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: max-content;
+  margin-right: 10rem;
 }
 
 .landing-right {
@@ -204,6 +205,8 @@
   justify-content: space-between;
   padding: 0 20%;
   font-size: 0.8rem;
+  font-family: ivyjournal, sans-serif;
+  font-weight: 300;
 }
 
 .reg-login-button {
@@ -217,9 +220,44 @@
   padding-bottom: 2%;
 }
 
-/* .carousel {
+.carousel {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
+  width: 35rem;
+}
+
+.carousel-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-slide {
+  font-family: ivyjournal, sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-align: left;
+  width: 30rem;
+  height: 22rem;
+  position: relative;
+}
+
+.carousel-text {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* height: 300px; */
+}
+
+.carousel-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  filter: brightness(1.15);
+}

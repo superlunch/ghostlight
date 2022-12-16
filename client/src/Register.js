@@ -67,15 +67,15 @@ function Register() {
           className="form-fields"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <input
+        {/* <input
           type="password"
           title="password_confirmation"
           placeholder="confirm password"
           className="form-fields"
-          // value={passwordConfirmation}
-          // onChange={(e) => setPasswordConfirmation(e.target.value)}
-          // this isn't functional yet
-        />
+          value={passwordConfirmation}
+          onChange={(e) => setPasswordConfirmation(e.target.value)}
+          this isn't functional yet
+        /> */}
         <button type="submit" className="reg-login-button">
           register
         </button>

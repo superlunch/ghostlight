@@ -1,11 +1,12 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
 import { useState } from "react";
 import Register from "./Register";
 import Login from "./Login";
+import ReactSimplyCarousel from "react-simply-carousel";
 
 function Home() {
   const [regLogin, setRegLogin] = useState(true);
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
   const toggleRegLogin = () => {
     setRegLogin((current) => !current);
@@ -15,7 +16,7 @@ function Home() {
     <div className="landing-cont">
       <div className="landing-left">
         <div className="blurb">
-          Your most-used stage management tools, <br /> all in one place.
+          Your most-used stage <br /> management tools, <br /> all in one place.
         </div>
         <div>
           {regLogin ? (
@@ -42,47 +43,66 @@ function Home() {
         </div>
       </div>
       <div className="landing-right">
-        {/* <div className="carousel"> */}
-        <div>
-          <Carousel>
-            <Carousel.Item>
-              <img
-                src="https://news.aut.ac.nz/__data/assets/image/0006/92328/placeholder-image10.jpg"
-                alt="First slide"
-              />
-              <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                src="https://news.aut.ac.nz/__data/assets/image/0006/92328/placeholder-image10.jpg"
-                alt="Second slide"
-              />
-
-              <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                src="https://news.aut.ac.nz/__data/assets/image/0006/92328/placeholder-image10.jpg"
-                alt="Third slide"
-              />
-
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
+        <div className="carousel">
+          {/* Need to get different/plainer carousel images */}
+          <ReactSimplyCarousel
+            activeSlideIndex={activeSlideIndex}
+            onRequestChange={setActiveSlideIndex}
+            itemsToShow={1}
+            itemsToScroll={1}
+            forwardBtnProps={{
+              style: {
+                alignSelf: "center",
+                background: "none",
+                opacity: 0.75,
+                border: "none",
+                color: "white",
+                cursor: "pointer",
+                fontSize: "1rem",
+                textAlign: "center",
+              },
+              children: <span>{<i class="bx bxs-chevron-right"></i>}</span>,
+            }}
+            backwardBtnProps={{
+              //here you can also pass className, or any other button element attributes
+              style: {
+                alignSelf: "center",
+                background: "none",
+                opacity: 0.75,
+                border: "none",
+                color: "white",
+                cursor: "pointer",
+                fontSize: "1rem",
+                textAlign: "center",
+              },
+              children: <span>{<i class="bx bxs-chevron-left"></i>}</span>,
+            }}
+          >
+            <div className="carousel-slide">
+              <img src="ai1.jpg" alt="ai1" className="carousel-img" />
+              <div className="carousel-text">
+                Create & share calls, reports, and more via form
+              </div>
+            </div>
+            <div className="carousel-slide">
+              <img src="ai2.jpg" alt="ai2" className="carousel-img" />
+              <div className="carousel-text">
+                Easy access to rehearsal schedules
+              </div>
+            </div>
+            <div className="carousel-slide">
+              <img src="ai4.jpg" alt="ai3" className="carousel-img" />
+              <div className="carousel-text">
+                Download documents in PDF format
+              </div>
+            </div>
+            <div className="carousel-slide">
+              <img src="ai3.jpg" alt="ai4" className="carousel-img" />
+              <div className="carousel-text">
+                Collect cast & crew contact information
+              </div>
+            </div>
+          </ReactSimplyCarousel>
         </div>
       </div>
     </div>
