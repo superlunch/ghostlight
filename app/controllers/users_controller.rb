@@ -2,7 +2,8 @@ class UsersController < ApplicationController
     # skip_before_action :authorize, only: [:index, :create, :login]
     
     def index
-        users = User.all_except(current_user)
+        # users = User.all_except(current_user)
+        users = User.all
         render json: users
     end
     

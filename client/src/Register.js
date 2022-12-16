@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function Register() {
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   // const [passwordConfirmation, setPasswordConfirmation] = useState("");
@@ -14,7 +14,7 @@ function Register() {
     e.preventDefault();
     axios
       .post("http://localhost:3000/users", {
-        username,
+        email,
         password,
         // password_confirmation: password,
       })
@@ -24,7 +24,7 @@ function Register() {
         localStorage.setItem("current_user", JSON.stringify(loggedInUser));
         const current_user = ("current_user", loggedInUser.user);
         // setCurrentUser(current_user);
-        console.log(`Welcome, @${current_user.username}!`);
+        console.log(`Welcome, @${current_user.first_name}!`);
         navigate("/me");
         // localStorage.setItem('jwt', r.data.token)
         // localStorage.setItem("user", JSON.stringify(r.data.user))
@@ -53,11 +53,11 @@ function Register() {
       <form className="reg-form" onSubmit={handleRegister}>
         <input
           type="text"
-          title="username"
-          placeholder="username"
-          value={username}
+          title="email"
+          placeholder="email"
+          value={email}
           className="form-fields"
-          onChange={(e) => setUsername(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <input
           type="password"
