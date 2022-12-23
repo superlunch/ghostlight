@@ -76,7 +76,7 @@ function Register() {
           onChange={(e) => setPasswordConfirmation(e.target.value)}
           this isn't functional yet
         /> */}
-        <button type="submit" className="reg-login-button">
+        <button type="submit" className="reg-button">
           register
         </button>
       </form>

@@ -6,7 +6,7 @@ function UserNav() {
 
   return (
     <nav className="user-nav">
-      <Link className="logo" to="/">Ghostlight</Link>
+      <Link className="logo" to="/">Ghostlite</Link>
       <div className="links">
         <Link className="nav-links" to="/dash">DASH</Link>
         <Link className="nav-links" to="/profile">PROFILE</Link>

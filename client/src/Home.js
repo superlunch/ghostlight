@@ -61,7 +61,7 @@ function Home() {
                 fontSize: "1rem",
                 textAlign: "center",
               },
-              children: <span>{<i class="bx bxs-chevron-right"></i>}</span>,
+              children: <span>{<i className="bx bxs-chevron-right"></i>}</span>,
             }}
             backwardBtnProps={{
               //here you can also pass className, or any other button element attributes
@@ -75,29 +75,23 @@ function Home() {
                 fontSize: "1rem",
                 textAlign: "center",
               },
-              children: <span>{<i class="bx bxs-chevron-left"></i>}</span>,
+              children: <span>{<i className="bx bxs-chevron-left"></i>}</span>,
             }}
           >
             <div className="carousel-slide">
-              <img src="ai1.jpg" alt="ai1" className="carousel-img" />
+              <img src="carousel4.jpg" alt="ai1" className="carousel-img" />
               <div className="carousel-text">
                 Create & share calls, reports, and more via form
               </div>
             </div>
             <div className="carousel-slide">
-              <img src="ai2.jpg" alt="ai2" className="carousel-img" />
+              <img src="carousel5.jpg" alt="ai2" className="carousel-img" />
               <div className="carousel-text">
                 Easy access to rehearsal schedules
               </div>
             </div>
             <div className="carousel-slide">
-              <img src="ai4.jpg" alt="ai3" className="carousel-img" />
-              <div className="carousel-text">
-                Download documents in PDF format
-              </div>
-            </div>
-            <div className="carousel-slide">
-              <img src="ai3.jpg" alt="ai4" className="carousel-img" />
+              <img src="carousel3.jpg" alt="ai4" className="carousel-img" />
               <div className="carousel-text">
                 Collect cast & crew contact information
               </div>

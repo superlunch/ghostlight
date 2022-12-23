@@ -4,7 +4,7 @@ function PublicNav() {
   return (
     <nav className="pub-nav">
       <Link className="logo" to="/">
-        Ghostlight
+        Ghostlite
       </Link>
     </nav>
   );

@@ -58,7 +58,7 @@ function Login({ handleCurrentUser }) {
           className="form-fields"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit" className="reg-login-button">
+        <button type="submit" className="login-button">
           login
         </button>
       </form>
