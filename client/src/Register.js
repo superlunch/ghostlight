@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const [currentUser, setCurrentUser] = useState([]);
   // const [passwordConfirmation, setPasswordConfirmation] = useState("");
 
   const navigate = useNavigate();
@@ -23,11 +23,11 @@ function Register() {
         localStorage.setItem("jwt", loggedInUser.token);
         localStorage.setItem("current_user", JSON.stringify(loggedInUser));
         const current_user = ("current_user", loggedInUser.user);
-        // setCurrentUser(current_user);
+        setCurrentUser(current_user);
         console.log(`Welcome, @${current_user.first_name}!`);
         navigate("/me");
-        // localStorage.setItem('jwt', r.data.token)
-        // localStorage.setItem("user", JSON.stringify(r.data.user))
+        localStorage.setItem('jwt', r.data.token)
+        localStorage.setItem("user", JSON.stringify(r.data.user))
         // navigate("/pets");
       })
       .catch(function (error) {

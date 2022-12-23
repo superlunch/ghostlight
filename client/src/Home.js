@@ -44,7 +44,6 @@ function Home() {
       </div>
       <div className="landing-right">
         <div className="carousel">
-          {/* Need to get different/plainer carousel images */}
           <ReactSimplyCarousel
             activeSlideIndex={activeSlideIndex}
             onRequestChange={setActiveSlideIndex}
@@ -64,7 +63,6 @@ function Home() {
               children: <span>{<i className="bx bxs-chevron-right"></i>}</span>,
             }}
             backwardBtnProps={{
-              //here you can also pass className, or any other button element attributes
               style: {
                 alignSelf: "center",
                 background: "none",
@@ -81,7 +79,7 @@ function Home() {
             <div className="carousel-slide">
               <img src="carousel6.jpg" alt="ai1" className="carousel-img" />
               <div className="carousel-text">
-                Create & share calls, reports, and more via form
+                Create & share calls, reports, and more
               </div>
             </div>
             <div className="carousel-slide">
