@@ -79,7 +79,7 @@ function Home() {
             }}
           >
             <div className="carousel-slide">
-              <img src="carousel4.jpg" alt="ai1" className="carousel-img" />
+              <img src="carousel6.jpg" alt="ai1" className="carousel-img" />
               <div className="carousel-text">
                 Create & share calls, reports, and more via form
               </div>
