@@ -48,10 +48,10 @@ Rails.application.routes.draw do
   # delete "/production_mtg_reports/:id", to: "production_mtg_reports#destroy"
 
   # performance_reports
-  get "/performance_reports", to: "performance_reports#index"
-  get "/performance_reports/:id", to: "performance_reports#show"
-  post "/performance_reports", to: "performance_reports#create"
-  patch "/performance_reports/:id", to: "performance_reports#update"
-  delete "/performance_reports/:id", to: "performance_reports#destroy"
+  # get "/performance_reports", to: "performance_reports#index"
+  # get "/performance_reports/:id", to: "performance_reports#show"
+  # post "/performance_reports", to: "performance_reports#create"
+  # patch "/performance_reports/:id", to: "performance_reports#update"
+  # delete "/performance_reports/:id", to: "performance_reports#destroy"
 
 end

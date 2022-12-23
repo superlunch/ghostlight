@@ -1,11 +1,15 @@
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Construction from "./Construction";
 import NotFound from "./NotFound";
 import UserNav from "./UserNav";
 import PublicNav from "./PublicNav";
 import Footer from "./Footer";
-import { Routes, Route } from "react-router-dom";
+import SignUp from "./SignUp";
+import Profile from "./Profile";
+import Production from "./Production";
+import Report from "./Report";
 
 
 function App() {
@@ -18,6 +22,10 @@ function App() {
         {/* <Route path="/" element={<Construction />} /> */}
         <Route path="/wip" element={<Construction />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/production" element={<Production />} />
+        <Route path="/report" element={<Report />} />
       </Routes>
       <Footer />
     </div>
