@@ -53,3 +53,5 @@ gem "active_model_serializers", "~> 0.10.12"
 gem 'active_record-acts_as'
 
 gem 'pundit'
+
+gem "jwt", "~> 2.5"
