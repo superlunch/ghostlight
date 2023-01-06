@@ -11,8 +11,6 @@ function SignUp() {
   const userDetails = JSON.parse(localStorage.getItem("current_user"));
   const currentUser = userDetails.user;
 
-  const [isEditingUser, setIsEditingUser] = useState(false);
-
   const [email, setEmail] = useState(currentUser.email);
   const [password, setPassword] = useState(currentUser.password);
 
@@ -52,9 +50,9 @@ function SignUp() {
       emergency_relationship: emergency_relationship,
       medical_info: medical_info,
       contact_notes: contact_notes,
-      job_id: job_id,
+      job_id: 1,
       production_id: production_id,
-      is_admin: is_admin,
+      is_admin: true,
       role: role,
     });
     console.log({
@@ -63,18 +61,18 @@ function SignUp() {
       last_name: last_name,
       phone: phone,
     });
-    handleLogout();
+    navigate("/profile");
   }
 
-  function handleDelete() {
-    fetch(`http://localhost:3000/users/${currentUser.id}`, {
-      method: "DELETE",
-    });
-    localStorage.clear("current_user");
-    alert(`Sorry to see you go, ${currentUser.first_name}!`);
-    navigate("/");
-    window.location.reload();
-  }
+  // function handleDelete() {
+  //   fetch(`http://localhost:3000/users/${currentUser.id}`, {
+  //     method: "DELETE",
+  //   });
+  //   localStorage.clear("current_user");
+  //   alert(`Sorry to see you go, ${currentUser.first_name}!`);
+  //   navigate("/");
+  //   window.location.reload();
+  // }
 
   function handleLogout() {
     localStorage.clear("current_user");
@@ -90,7 +88,7 @@ function SignUp() {
         <h2>SIGN-UP</h2>
         <div className="line2" />
         <br />
-        <form className="signup-form">
+        <form onSubmit={handleEditUser} className="signup-form">
           <div className="signup-label">email & password</div>
           <input
             type="text"
