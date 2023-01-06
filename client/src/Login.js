@@ -15,8 +15,8 @@ function Login({ handleCurrentUser }) {
     axios
       .post("http://localhost:3000/login", { email, password })
       .then((r) => {
-        handleCurrentUser(r.data.user)
-        localStorage.setItem('jwt', r.data.token)
+        handleCurrentUser(r.data.user);
+        localStorage.setItem("jwt", r.data.token);
         localStorage.setItem("user", JSON.stringify(r.data.user));
         // navigate("/pets")
         const loggedInUser = r.data;
