@@ -25,8 +25,8 @@ function Login({ handleCurrentUser }) {
         const current_user = ("current_user", loggedInUser.user);
         // setCurrentUser(current_user);
         console.log(`Hi, ${current_user.first_name}!`);
-        // navigate("/pets");
-        // window.location.reload();
+        navigate("/production");
+        window.location.reload();
       })
       .catch(function (error) {
         if (error.response) {

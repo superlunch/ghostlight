@@ -24,11 +24,10 @@ function Register() {
         localStorage.setItem("current_user", JSON.stringify(loggedInUser));
         const current_user = ("current_user", loggedInUser.user);
         setCurrentUser(current_user);
-        console.log(`Welcome, @${current_user.first_name}!`);
-        navigate("/me");
+        console.log(`Welcome, ${current_user.first_name}!`);
+        navigate("/signup");
         localStorage.setItem('jwt', r.data.token)
         localStorage.setItem("user", JSON.stringify(r.data.user))
-        // navigate("/pets");
       })
       .catch(function (error) {
         if (error.response) {

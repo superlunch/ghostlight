@@ -36,7 +36,7 @@ function App() {
   return (
     <div>
       {/* <UserNav /> */}
-      <PublicNav />
+
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/" element={<Construction />} /> */}
