@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PublicNav from "./PublicNav";
+import UserNav from "./UserNav";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -83,9 +84,9 @@ function SignUp() {
 
   return (
     <div>
-      <PublicNav />
+      <UserNav />
       <div className="signup-cont">
-        <h2>SIGN-UP</h2>
+        <h2>USER DETAILS</h2>
         <div className="line2" />
         <br />
         <form onSubmit={handleEditUser} className="signup-form">
@@ -185,7 +186,7 @@ function SignUp() {
             onChange={(e) => setContact_notes(e.target.value)}
           />
           <button type="submit" className="signup-button">
-            create account
+            save
           </button>
         </form>
       </div>

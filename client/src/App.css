@@ -4,7 +4,7 @@
 }
 
 .src4 {
-  position: absolute;
+  /* position: absolute; */
   top: 20%;
   height: 40vmin;
 }
@@ -16,6 +16,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  /* margin-top: 37%; */
 }
 
 .title {
@@ -25,18 +26,21 @@
   letter-spacing: 0.01em;
   font-size: calc(36px + 2vmin);
   color: var(--1mustard);
-  margin-top: 28px;
 }
 
 .homebody {
-  position: absolute;
-  top: 58%;
+  /* position: absolute; */
+  /* top: 70%; */
 }
 
 /* NotFound */
 
 .app-body {
+  margin-top: 5%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* PublicNav */
@@ -76,10 +80,10 @@
   align-items: baseline;
   color: white;
   /* padding-top: 1%; */
-  clear: both; 
+  clear: both;
   /* position: relative;  */
-  z-index: 1; 
-  margin-top: 58em; 
+  z-index: 1;
+  margin-top: 58em;
   font-size: 20px;
 }
 
@@ -283,7 +287,7 @@
   position: absolute;
   left: 2%;
   right: 2%;
-  bottom: 92%;
+  bottom: 93%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
@@ -291,7 +295,7 @@
 
 .signup-cont {
   position: absolute;
-  /* top: 20%; */
+  top: 2%;
   left: 15%;
   right: 15%;
   margin: 6% 10% 0 10%;
@@ -321,7 +325,7 @@
 }
 
 .signup-label {
-  font-family: ivyjournal, sans-serif;
+  /* font-family: ivyjournal, sans-serif; */
   font-weight: 300;
   font-size: 1.1rem;
   text-align: left;

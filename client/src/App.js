@@ -14,6 +14,10 @@ import Report from "./Report";
 import axios from "axios";
 import Login from "./Login";
 
+// home needs to be different for logged in vs logged out
+// fix footer omfg
+
+
 function App() {
   const [users, setUsers] = useState([]);
   const [currentUser, setCurrentUser] = useState(null);
