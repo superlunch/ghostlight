@@ -87,7 +87,7 @@ function Home() {
               <div className="carousel-slide">
                 <img src="carousel6.jpg" alt="ai1" className="carousel-img" />
                 <div className="carousel-text">
-                  Create & share rehearsal reports
+                  Create & view rehearsal reports via form
                 </div>
               </div>
               <div className="carousel-slide">

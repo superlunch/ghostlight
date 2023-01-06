@@ -69,13 +69,18 @@
   position: absolute;
   left: 0%;
   right: 0%;
-  top: 92%;
+  /* top: 80%; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
   color: white;
-  padding-top: 1%;
+  /* padding-top: 1%; */
+  clear: both; 
+  /* position: relative;  */
+  z-index: 1; 
+  margin-top: 58em; 
+  font-size: 20px;
 }
 
 .line {
@@ -176,7 +181,6 @@
   font-size: 1.75rem;
   /* line-height: 30px; */
   text-align: left;
-  
 }
 
 .reg-form {
@@ -273,4 +277,55 @@
 .src4-2 {
   height: 40vmin;
   transform: scaleX(-1);
+}
+
+.line2 {
+  position: absolute;
+  left: 2%;
+  right: 2%;
+  bottom: 92%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* signup */
+
+.signup-cont {
+  position: absolute;
+  /* top: 20%; */
+  left: 15%;
+  right: 15%;
+  margin: 6% 10% 0 10%;
+  padding: 1%;
+  background-color: rgba(25, 25, 25, 0.5);
+  border-radius: 10px;
+}
+
+.signup-button {
+  margin: 8% 0 2% 0;
+  width: 25%;
+  background-color: gray;
+}
+
+.signup-fields {
+  width: 99%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: #757575;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.signup-label {
+  font-family: ivyjournal, sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  text-align: left;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }

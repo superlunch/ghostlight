@@ -36,7 +36,6 @@ function App() {
   return (
     <div>
       {/* <UserNav /> */}
-
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/" element={<Construction />} /> */}
